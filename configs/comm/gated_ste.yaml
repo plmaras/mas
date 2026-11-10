@@ -1,0 +1,5 @@
+defaults:
+  - base
+  - _self_
+name: gated_ste
+gate_mode: straight_through

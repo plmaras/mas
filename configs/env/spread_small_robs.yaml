@@ -1,0 +1,6 @@
+# Second observation-radius setting for E9 (harder: smaller local view).
+defaults:
+  - spread
+  - _self_
+name: spread_small_robs
+obs_radius: 0.3

@@ -1,0 +1,8 @@
+# Default FireWorkers task. The E1 calibration phase (scripts/e1_task_validation.py --calibrate)
+# compares the candidate variants (wildfire_8x8 / _10x10 / _12x12) with learned NoComm and
+# FullComm agents and picks one by a pre-set rule; scripts/run_plan.py then passes
+# `env=<chosen>` to every later phase. Without calibration, this default is used.
+defaults:
+  - wildfire_12x12
+  - _self_
+name: wildfire

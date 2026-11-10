@@ -1,0 +1,68 @@
+# FireWorkers: free-range-zoo wildfire_v0 dynamics in JAX (envs/wildfire.py) with a local view
+# and mobile firefighters (the two extensions the communication study needs).
+# Every field maps 1:1 onto WildfireParams; v0 names are kept where they exist.
+name: wildfire_base
+kind: wildfire
+n_agents: 4
+agent_density: 0.0625        # agents per cell -> 8x8 grid at N=4, 13x13 at N=10, 28x28 at N=50, 40x40 at N=100
+grid_size: null              # explicit side length (overrides agent_density)
+max_steps: 50
+obs_radius: 1                # Chebyshev view radius in cells (3x3 window = attack area); v0 = full observability
+mobile: true                 # v0 firefighters are static
+agent_positions: null        # fixed (row, col) per agent; null = random each episode
+# ---- procedural layout
+fire_type_probs: [0.1, 0.4, 0.4, 0.1]   # P(not flammable), P(type 1), P(type 2), P(type 3); type = power needed
+init_fire_density: 0.05      # burning cells at reset, per cell (3 fires on 8x8)
+# ---- fire dynamics (v0 FireConfiguration + StochasticConfiguration)
+num_fire_states: 5
+ignition_temp: 1
+intensity_increase_probability: 0.2
+intensity_decrease_probability: 0.8
+extra_power_decrease_bonus: 0.1
+burnout_probability: 0.2
+base_spread_rate: 0.06       # spread probability contributed by each burning 4-neighbour
+max_spread_rate: 67.0        # only with realistic_fire_spread (wind)
+cell_size: 200.0
+wind_direction: 0.0
+random_ignition_probability: 0.0
+initial_fuel: 2
+special_burnout_probability: true
+fire_increase: true
+fire_decrease: true
+fire_spread: true
+realistic_fire_spread: false
+random_fire_ignition: false
+fire_fuel: true
+# ---- agents (v0 AgentConfiguration)
+fire_reduction_power: 1.0
+attack_range: 1
+suppressant_states: 3
+initial_suppressant: 3.0
+initial_capacity: 3.0
+suppressant_decrease_probability: 1.0
+suppressant_refill_probability: 0.8
+possible_capacities: [2.0, 3.0, 4.0]
+capacity_probabilities: [0.0, 1.0, 0.0]
+tank_switch_probability: 1.0
+equipment_states: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]   # (capacity, power, range) bonus per state
+initial_equipment_state: 2
+repair_probability: 1.0
+degrade_probability: 1.0
+critical_error_probability: 0.0
+equipment_condition_on_actions: false
+suppressant_decrease: false
+suppressant_refill: true
+tank_switch: false
+critical_error: false
+degrade: false
+repair: false
+# ---- rewards (v0 RewardConfiguration, per fire type 0..3)
+fire_rewards_by_type: [0.0, 1.0, 2.0, 3.0]
+bad_attack_penalty: -1.0
+burnout_penalty: -1.0
+burnout_penalty_scaled: false
+termination_reward: 0.0
+termination_kappa: 0.0
+normalize_reward: true       # team reward / n_agents: returns comparable across N
+success_max_burned_frac: 0.1  # success = all fires out at some step with <= 10% of flammable cells burned out
+reward_scale: 1.0            # used by the learner instead of algo.reward_scale

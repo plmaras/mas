@@ -1,0 +1,18 @@
+name: mappo
+total_updates: 2000       # each update = num_envs full episodes (2000 x 64 x 50 = 6.4M env steps per run)
+num_envs: 64
+num_minibatches: 4        # minibatches over environments
+grad_accum_steps: 1       # >1: accumulate gradients over k minibatches (memory fallback at large N)
+update_epochs: 4
+lr: 5.0e-4
+max_grad_norm: 0.5
+gamma: 0.99
+gae_lambda: 0.95
+clip_eps: 0.2
+vf_clip: 0.2
+vf_coef: 0.5
+ent_coef: 0.01
+reward_scale: 0.1          # rewards are multiplied by this inside GAE / value targets only
+hidden_dim: 64
+critic_hidden_dim: 128
+critic: auto              # auto | deepsets | grid (auto: grid CNN for wildfire, DeepSets for spread)

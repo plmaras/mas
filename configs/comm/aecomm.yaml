@@ -1,0 +1,6 @@
+defaults:
+  - base
+  - _self_
+name: aecomm
+gate_mode: full
+message_type: ae

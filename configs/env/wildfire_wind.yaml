@@ -1,0 +1,9 @@
+# Second task variant for E9: v0 "realistic" wind-driven spread (anisotropic cross filter).
+defaults:
+  - wildfire
+  - _self_
+name: wildfire_wind
+realistic_fire_spread: true
+base_spread_rate: 13.5       # v0 realistic rates: base/cell_size / (1 - cos(theta - wind) * (1 - base/max_spread_rate))
+wind_direction: 1.5707963    # wind blowing toward the east
+max_spread_rate: 32.0        # -> spread weights N 0.068, E 0.16 (downwind), S 0.068, W 0.043

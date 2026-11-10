@@ -1,0 +1,6 @@
+defaults:
+  - base
+  - _self_
+name: nocomm
+gate_mode: full
+zero_messages: true   # same graph and parameter count as FullComm

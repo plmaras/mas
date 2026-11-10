@@ -1,0 +1,38 @@
+{
+  "rule": "mid: smallest ls halving the switch rate; high: smallest cutting it >= 4x; density within 0.05",
+  "rows": {
+    "gated_rho0.25_ls0": {
+      "ls": 0.0,
+      "density": 0.19905,
+      "switch": 0.14569727891156461,
+      "ret": -0.7400000095367432
+    },
+    "gated_rho0.25_ls0.003": {
+      "ls": 0.003,
+      "density": 0.24631666666666666,
+      "switch": 0.10909863945578231,
+      "ret": -0.9399999976158142
+    },
+    "gated_rho0.25_ls0.01": {
+      "ls": 0.01,
+      "density": 0.2426,
+      "switch": 0.10130952380952381,
+      "ret": -0.5224999785423279
+    },
+    "gated_rho0.25_ls0.03": {
+      "ls": 0.03,
+      "density": 0.25238333333333335,
+      "switch": 0.06377551020408163,
+      "ret": -0.625
+    },
+    "gated_rho0.25_ls0.1": {
+      "ls": 0.1,
+      "density": 0.062266666666666665,
+      "switch": 0.01183673469387755,
+      "ret": -0.8424999713897705
+    }
+  },
+  "switch_ls0": 0.14569727891156461,
+  "ls_mid": 0.03,
+  "ls_high": 0.03
+}

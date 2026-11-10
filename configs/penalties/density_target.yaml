@@ -1,0 +1,17 @@
+# v2 design (fixes v1's all-or-nothing gates): lambda_c is not a fixed sweep value but the
+# output of a PI controller that holds the mean P(g>0) at target_density, so models with and
+# without the switching penalty are compared at the same link count. lambda_s ramps in only
+# after the density target is reached (switching it on from the start blocks sparsification).
+defaults:
+  - none
+  - _self_
+name: density_target
+target_density: 0.25   # set per condition
+lambda_s: 0.0          # set per condition
+warmup_frac: 0.2       # density target = 1 for the first 20 % of training ...
+anneal_frac: 0.3       # ... then ramps linearly to target_density by 50 %
+dual_lr: 1.0e-3        # PI integral gain (Ki)
+dual_kp: 0.05          # PI proportional gain (Kp)
+dual_clip: 0.1         # anti-windup bound on |I| and |lambda_c|
+ls_warmup_frac: 0.5    # lambda_s = 0 until the target density is reached ...
+ls_anneal_frac: 0.2    # ... then ramps to lambda_s by 70 % of training

@@ -1,0 +1,9 @@
+# Closest to free-range-zoo wildfire_v0: static firefighters, full observability (the view
+# covers the whole 8x8 grid). Used only to check the port; communication cannot carry private
+# information here.
+defaults:
+  - wildfire
+  - _self_
+name: wildfire_v0
+mobile: false
+obs_radius: 8

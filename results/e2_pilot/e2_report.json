@@ -1,0 +1,461 @@
+{
+  "rhos": [
+    1.0,
+    0.75,
+    0.5,
+    0.25,
+    0.1,
+    0.05
+  ],
+  "gate_eval": "stoch",
+  "table": {
+    "gated_rho1_ls0": {
+      "episode_return": {
+        "mean": -0.9725000262260437,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": -0.9725000262260437,
+        "n": 1,
+        "values": [
+          -0.9725000262260437
+        ]
+      },
+      "success_rate": {
+        "mean": 0.29,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.29,
+        "n": 1,
+        "values": [
+          0.29
+        ]
+      },
+      "final_burned_frac": {
+        "mean": 0.16537195444107056,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.16537195444107056,
+        "n": 1,
+        "values": [
+          0.16537195444107056
+        ]
+      },
+      "active_link_ratio": {
+        "mean": 0.9492166666666667,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.9492166666666667,
+        "n": 1,
+        "values": [
+          0.9492166666666667
+        ]
+      },
+      "gate_switch_rate": {
+        "mean": 0.07976190476190476,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.07976190476190476,
+        "n": 1,
+        "values": [
+          0.07976190476190476
+        ]
+      },
+      "mean_run_length": {
+        "mean": 16.77555228276878,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 16.77555228276878,
+        "n": 1,
+        "values": [
+          16.77555228276878
+        ]
+      }
+    },
+    "gated_rho0.75_ls0": {
+      "episode_return": {
+        "mean": -1.0299999713897705,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": -1.0299999713897705,
+        "n": 1,
+        "values": [
+          -1.0299999713897705
+        ]
+      },
+      "success_rate": {
+        "mean": 0.29,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.29,
+        "n": 1,
+        "values": [
+          0.29
+        ]
+      },
+      "final_burned_frac": {
+        "mean": 0.17057348787784576,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.17057348787784576,
+        "n": 1,
+        "values": [
+          0.17057348787784576
+        ]
+      },
+      "active_link_ratio": {
+        "mean": 0.7611333333333333,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.7611333333333333,
+        "n": 1,
+        "values": [
+          0.7611333333333333
+        ]
+      },
+      "gate_switch_rate": {
+        "mean": 0.22081632653061226,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.22081632653061226,
+        "n": 1,
+        "values": [
+          0.22081632653061226
+        ]
+      },
+      "mean_run_length": {
+        "mean": 6.232837450525454,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 6.232837450525454,
+        "n": 1,
+        "values": [
+          6.232837450525454
+        ]
+      }
+    },
+    "gated_rho0.5_ls0": {
+      "episode_return": {
+        "mean": -1.309999942779541,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": -1.309999942779541,
+        "n": 1,
+        "values": [
+          -1.309999942779541
+        ]
+      },
+      "success_rate": {
+        "mean": 0.27,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.27,
+        "n": 1,
+        "values": [
+          0.27
+        ]
+      },
+      "final_burned_frac": {
+        "mean": 0.17167308926582336,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.17167308926582336,
+        "n": 1,
+        "values": [
+          0.17167308926582336
+        ]
+      },
+      "active_link_ratio": {
+        "mean": 0.4892666666666667,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.4892666666666667,
+        "n": 1,
+        "values": [
+          0.4892666666666667
+        ]
+      },
+      "gate_switch_rate": {
+        "mean": 0.2686394557823129,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.2686394557823129,
+        "n": 1,
+        "values": [
+          0.2686394557823129
+        ]
+      },
+      "mean_run_length": {
+        "mean": 3.50896485775759,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 3.50896485775759,
+        "n": 1,
+        "values": [
+          3.50896485775759
+        ]
+      }
+    },
+    "gated_rho0.25_ls0": {
+      "episode_return": {
+        "mean": -1.5499999523162842,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": -1.5499999523162842,
+        "n": 1,
+        "values": [
+          -1.5499999523162842
+        ]
+      },
+      "success_rate": {
+        "mean": 0.27,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.27,
+        "n": 1,
+        "values": [
+          0.27
+        ]
+      },
+      "final_burned_frac": {
+        "mean": 0.17050495743751526,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.17050495743751526,
+        "n": 1,
+        "values": [
+          0.17050495743751526
+        ]
+      },
+      "active_link_ratio": {
+        "mean": 0.26961666666666667,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.26961666666666667,
+        "n": 1,
+        "values": [
+          0.26961666666666667
+        ]
+      },
+      "gate_switch_rate": {
+        "mean": 0.20239795918367348,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.20239795918367348,
+        "n": 1,
+        "values": [
+          0.20239795918367348
+        ]
+      },
+      "mean_run_length": {
+        "mean": 2.6028962188254225,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 2.6028962188254225,
+        "n": 1,
+        "values": [
+          2.6028962188254225
+        ]
+      }
+    },
+    "gated_rho0.1_ls0": {
+      "episode_return": {
+        "mean": -1.2274999618530273,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": -1.2274999618530273,
+        "n": 1,
+        "values": [
+          -1.2274999618530273
+        ]
+      },
+      "success_rate": {
+        "mean": 0.25,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.25,
+        "n": 1,
+        "values": [
+          0.25
+        ]
+      },
+      "final_burned_frac": {
+        "mean": 0.16979515552520752,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.16979515552520752,
+        "n": 1,
+        "values": [
+          0.16979515552520752
+        ]
+      },
+      "active_link_ratio": {
+        "mean": 0.06566666666666666,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.06566666666666666,
+        "n": 1,
+        "values": [
+          0.06566666666666666
+        ]
+      },
+      "gate_switch_rate": {
+        "mean": 0.06494897959183674,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.06494897959183674,
+        "n": 1,
+        "values": [
+          0.06494897959183674
+        ]
+      },
+      "mean_run_length": {
+        "mean": 1.9858870967741935,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 1.9858870967741935,
+        "n": 1,
+        "values": [
+          1.9858870967741935
+        ]
+      }
+    },
+    "gated_rho0.05_ls0": {
+      "episode_return": {
+        "mean": -1.9375,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": -1.9375,
+        "n": 1,
+        "values": [
+          -1.9375
+        ]
+      },
+      "success_rate": {
+        "mean": 0.23,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.23,
+        "n": 1,
+        "values": [
+          0.23
+        ]
+      },
+      "final_burned_frac": {
+        "mean": 0.18300177156925201,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.18300177156925201,
+        "n": 1,
+        "values": [
+          0.18300177156925201
+        ]
+      },
+      "active_link_ratio": {
+        "mean": 0.037783333333333335,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.037783333333333335,
+        "n": 1,
+        "values": [
+          0.037783333333333335
+        ]
+      },
+      "gate_switch_rate": {
+        "mean": 0.03860544217687075,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 0.03860544217687075,
+        "n": 1,
+        "values": [
+          0.03860544217687075
+        ]
+      },
+      "mean_run_length": {
+        "mean": 1.9376068376068376,
+        "ci_lo": NaN,
+        "ci_hi": NaN,
+        "iqm": 1.9376068376068376,
+        "n": 1,
+        "values": [
+          1.9376068376068376
+        ]
+      }
+    }
+  },
+  "controller": {
+    "gated_rho1_ls0": {
+      "target": 1.0,
+      "achieved": {
+        "mean": 0.9492166666666667,
+        "lo": NaN,
+        "hi": NaN,
+        "sd": NaN,
+        "n": 1
+      },
+      "abs_error": null
+    },
+    "gated_rho0.75_ls0": {
+      "target": 0.75,
+      "achieved": {
+        "mean": 0.7611333333333333,
+        "lo": NaN,
+        "hi": NaN,
+        "sd": NaN,
+        "n": 1
+      },
+      "abs_error": 0.011133333333333328
+    },
+    "gated_rho0.5_ls0": {
+      "target": 0.5,
+      "achieved": {
+        "mean": 0.4892666666666667,
+        "lo": NaN,
+        "hi": NaN,
+        "sd": NaN,
+        "n": 1
+      },
+      "abs_error": 0.010733333333333317
+    },
+    "gated_rho0.25_ls0": {
+      "target": 0.25,
+      "achieved": {
+        "mean": 0.26961666666666667,
+        "lo": NaN,
+        "hi": NaN,
+        "sd": NaN,
+        "n": 1
+      },
+      "abs_error": 0.01961666666666667
+    },
+    "gated_rho0.1_ls0": {
+      "target": 0.1,
+      "achieved": {
+        "mean": 0.06566666666666666,
+        "lo": NaN,
+        "hi": NaN,
+        "sd": NaN,
+        "n": 1
+      },
+      "abs_error": 0.03433333333333334
+    },
+    "gated_rho0.05_ls0": {
+      "target": 0.05,
+      "achieved": {
+        "mean": 0.037783333333333335,
+        "lo": NaN,
+        "hi": NaN,
+        "sd": NaN,
+        "n": 1
+      },
+      "abs_error": 0.012216666666666667
+    }
+  },
+  "gate_collapse": {
+    "gated_rho1_ls0": false,
+    "gated_rho0.75_ls0": false,
+    "gated_rho0.5_ls0": false,
+    "gated_rho0.25_ls0": false,
+    "gated_rho0.1_ls0": false,
+    "gated_rho0.05_ls0": false
+  }
+}

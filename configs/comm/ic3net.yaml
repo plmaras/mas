@@ -1,0 +1,6 @@
+defaults:
+  - base
+  - _self_
+name: ic3net
+gate_mode: reinforce
+gate_scope: sender

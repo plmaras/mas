@@ -1,0 +1,11 @@
+# Task variant (E1 calibration candidate): 8x8 grid at N=4 (16 cells per agent), 3 initial fires,
+# fire types mostly 1-2. Learned agents nearly match the global-information scripted team here
+# without messages (CPU pilot), so communication may not be needed.
+defaults:
+  - wildfire_base
+  - _self_
+name: wildfire_8x8
+agent_density: 0.0625
+init_fire_density: 0.05
+fire_type_probs: [0.1, 0.4, 0.4, 0.1]
+base_spread_rate: 0.06

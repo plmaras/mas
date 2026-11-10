@@ -1,0 +1,74 @@
+{
+  "e1_calibrate": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 4847,
+    "finished": "2026-11-06 18:40:00"
+  },
+  "e1": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 4611,
+    "finished": "2026-11-06 19:56:51"
+  },
+  "e2_pilot": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 385,
+    "finished": "2026-11-06 20:33:57"
+  },
+  "e2": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 7528,
+    "finished": "2026-11-06 22:39:25"
+  },
+  "e3_pilot": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 1009,
+    "finished": "2026-11-07 04:31:45"
+  },
+  "e3": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 1605,
+    "finished": "2026-11-07 04:58:30"
+  },
+  "e4": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 3831,
+    "finished": "2026-11-07 06:02:21"
+  },
+  "e5": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 48,
+    "finished": "2026-11-07 06:03:09"
+  },
+  "e6": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 1427,
+    "finished": "2026-11-07 06:26:56"
+  },
+  "e7": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 284,
+    "finished": "2026-11-07 06:31:41"
+  },
+  "e8": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 3254,
+    "finished": "2026-11-07 07:25:55"
+  },
+  "e9": {
+    "done": true,
+    "last_exit": 0,
+    "seconds": 22422,
+    "finished": "2026-11-07 14:11:03"
+  }
+}

@@ -1,0 +1,15 @@
+name: none
+lambda_c: 0.0      # communication-cost weight (target after annealing)
+lambda_s: 0.0      # switching-cost weight (target after annealing)
+warmup_frac: 0.2   # fraction of training with both lambdas at zero
+anneal_frac: 0.3   # fraction of training over which lambdas ramp linearly to target
+# Density targeting (v2). When target_density is set, lambda_c is not scheduled: it is a
+# Lagrange multiplier updated by dual ascent so that the mean P(g>0) over permitted links
+# tracks a target that ramps from 1 to target_density over the anneal window (equality
+# constraint, so lambda_c may go negative and reopen gates after an overshoot).
+target_density: null
+dual_lr: 3.0e-4    # integral gain: I += dual_lr * (mean P(g>0) - target) after every update
+dual_kp: 0.0       # proportional gain: lambda_c = clip(I + dual_kp * error); 0 = pure dual ascent
+dual_clip: 0.1     # |I| <= dual_clip and |lambda_c| <= dual_clip (anti-windup)
+ls_warmup_frac: null   # lambda_s schedule; null -> same warm-up/ramp as lambda_c. Setting it later
+ls_anneal_frac: null   # than warmup_frac + anneal_frac switches persistence on after sparsification

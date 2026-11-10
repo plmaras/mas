@@ -1,0 +1,6 @@
+# Second task variant for E9: wider local view (5x5 window instead of 3x3), so less is private.
+defaults:
+  - wildfire
+  - _self_
+name: wildfire_r2
+obs_radius: 2

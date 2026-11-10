@@ -1,0 +1,15 @@
+# CPU install. GPU (Linux / Kaggle / WSL2): replace the first line with  jax[cuda12]==0.6.2
+jax[cpu]==0.6.2
+jaxlib==0.6.2
+flax==0.10.7
+optax==0.2.8
+hydra-core==1.3.8
+omegaconf==2.3.1
+numpy>=1.26
+scipy>=1.13
+matplotlib>=3.8
+pandas>=2.0
+rliable==1.2.0
+psutil>=5.9
+pytest>=8.0
+# optional: wandb (logging.wandb=true); torch + a free-range-zoo checkout for tests/test_wildfire_v0_parity.py

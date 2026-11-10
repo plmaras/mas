@@ -1,0 +1,17 @@
+name: spread
+kind: spread
+n_agents: 4
+n_landmarks: null        # null -> same as n_agents
+density: 1.0             # agents per unit area; arena side = sqrt(n_agents / density)
+obs_radius: 0.5
+max_steps: 50
+dt: 0.1
+damping: 0.25
+accel: 5.0
+max_speed: 1.0
+agent_radius: 0.05
+cover_threshold: 0.1
+collision_penalty: 1.0
+normalize_reward: true   # divide team reward by the number of landmarks
+k_obs_landmarks: 4
+k_obs_agents: 4

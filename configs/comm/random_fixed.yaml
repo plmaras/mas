@@ -1,0 +1,5 @@
+defaults:
+  - base
+  - _self_
+name: random_fixed
+gate_mode: random_fixed

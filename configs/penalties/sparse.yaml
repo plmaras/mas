@@ -1,0 +1,5 @@
+defaults:
+  - none
+  - _self_
+name: sparse
+lambda_c: 0.05

@@ -1,0 +1,12 @@
+.venv
+__pycache__/
+.pytest_cache/
+.jax_cache/
+logs/
+
+# Training outputs (3+ GB: weights and eval dumps); regenerate with the scripts in scripts/
+runs/
+*.npz
+
+# Kept local: lists team members' names and roll numbers
+Need2Know_ProjectProposal.pdf

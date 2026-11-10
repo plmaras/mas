@@ -1,0 +1,20 @@
+name: base
+gate_mode: hard_concrete   # hard_concrete | straight_through | reinforce | full | hand_rule | random_fixed | random_markov
+gate_scope: link           # link (per directed link) | sender (IC3Net-style, one gate per sender)
+message_type: continuous   # continuous | language | ae
+zero_messages: false       # true -> messages multiplied by 0 (NoComm / C4)
+msg_dim: 16
+attn_dim: 32
+gate_hidden: 16
+k_neighbors: 10            # spatial KNN mask; links outside it are off
+comm_radius: null          # optional extra distance limit on links
+hard_concrete: {beta: 0.5, gamma: -0.1, zeta: 1.1}
+gate_init_logit: 2.0       # near-on init: P(g>0) ~ 0.96 for hard concrete
+gate_entropy_coef: 0.0     # optional entropy bonus on gates (anti-collapse)
+hand_rule_d: 0.5           # hand_rule: gate on when |p_i - p_j| < d (world units)
+density: 0.5               # random_fixed / random_markov: target P(on)
+switch_rate: 0.1           # random_markov: per-step flip probability
+vocab_size: 9              # language variant: 8 compass directions + "none"
+gumbel_tau: 1.0
+lang_coef: 1.0
+ae_coef: 1.0

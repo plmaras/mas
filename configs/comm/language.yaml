@@ -1,0 +1,6 @@
+defaults:
+  - base
+  - _self_
+name: language
+gate_mode: full
+message_type: language

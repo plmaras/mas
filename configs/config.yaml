@@ -1,0 +1,34 @@
+# Root config. Every hyperparameter lives in configs/ (no hardcoded values in code).
+defaults:
+  - env: wildfire
+  - algo: mappo
+  - comm: gated
+  - penalties: none
+  - _self_
+
+seed: 0
+exp_name: core
+run_name: ${comm.name}_lc${penalties.lambda_c}_ls${penalties.lambda_s}
+out_dir: runs/${exp_name}/${run_name}/seed_${seed}
+
+eval:
+  episodes: 100          # evaluation episodes saved per run
+  batch_size: 100        # episodes simulated in parallel
+  greedy_actions: false  # sample actions from the policy (gates are deterministic)
+  stochastic_gates_too: true  # also save a stochastic-gate log, reported separately
+  distance_bins: [0.0, 1.5, 2.5, 3.5, 5.0, 7.0, 1.0e9]   # link distance in units of obs_radius (cells at R=1): overlapping views, adjacent views, ...
+  float16_logs: false
+  save_obs: false        # observations are not used by any analysis; set true to keep them in eval_*.npz
+
+logging:
+  log_every: 10
+  ckpt_every: 200        # resumable batch checkpoint (runs/<exp>/_resume) every k updates
+  wandb: false
+  wandb_project: gated-comm-marl
+  wandb_mode: offline    # online | offline | disabled
+
+hydra:
+  run:
+    dir: ${out_dir}/hydra
+  job:
+    chdir: false

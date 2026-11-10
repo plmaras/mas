@@ -1,0 +1,10 @@
+# Task variant (E1 calibration candidate): 12x12 grid at N=4 (36 cells per agent), 3 initial
+# fires, most fires need 2-3 firefighters at once, slightly slower spread.
+defaults:
+  - wildfire_base
+  - _self_
+name: wildfire_12x12
+agent_density: 0.028
+init_fire_density: 0.02
+fire_type_probs: [0.1, 0.2, 0.5, 0.2]
+base_spread_rate: 0.05
